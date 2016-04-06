@@ -1,0 +1,19 @@
+Encrypt 34 using a Feistel Cipher
+
+-> 011 100
+
+Iteration 1
+100 011 (Flip)
+011 111 (XOR) (Where F is our round function that we have implemented in previous program.) (Here it does nothing.)
+
+Notes:
+    ->So, we flip our inputs (Which I assume is done because we want both sides to "swap" and change)
+    ->then we implement our confuse and disperse algorithm (shown in cpp file.)
+    ->then we XOR it (To add entropy to the data)
+
+Also Note:
+    ->block size (general size of our flip divisor)
+    ->Key size (We have to reverse these if we are decrypting)
+    ->Subkeys (We change change our input based on previous output)
+    ->Round function (Shown in my CPP files)
+
